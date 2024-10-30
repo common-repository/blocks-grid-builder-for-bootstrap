@@ -1,0 +1,78 @@
+@import "./style";
+.wp-block[data-type="bootstrap-blocks/container"] {
+  .container-wrap {
+	padding: 10px 8px 0px 8px;
+	border: 1px dotted #a5a5a5;
+	overflow: hidden;
+	&.is-toggled {
+	  max-height: 40px;
+	  .toggler svg {
+		transform: rotate(180deg);
+	  }
+	}
+  }
+  .container-toolbar {
+	position: absolute;
+	width: calc(100% - 16px);
+	font-size: 12px;
+	top: 10px;
+	display: flex;
+	justify-content: space-between;
+	z-index: 2;
+	.toggler {
+	  width: 26px;
+	  height: 22px;
+	  cursor: pointer;
+	  svg {
+		width: 24px;
+		left: -3px;
+		position: relative;
+		top: -2px;
+		fill: rgba(25, 30, 35, .3);
+		transition: all 300ms;
+	  }
+	  &.is-active {
+		svg {
+		  fill: var(--wp-admin-theme-color)
+		}
+	  }
+	}
+	.cont-title {
+	  font-weight: bold;
+	  color: rgba(25, 30, 35, .3);
+	  line-height: 12px;
+	  max-height: 20px;
+	}
+  }
+  &.is-selected {
+	.container-toolbar {
+	  .cont-title {
+		color: #191e23;
+	  }
+	  .toggler {
+		svg {
+		  fill: #191e23;
+		}
+	  }
+	}
+  }
+}
+.wp-block-bootstrap-blocks-container {
+	padding: 0 40px;
+  	display: flex;
+  	flex-wrap: wrap;
+  	&:hover {
+	  border: 2px dotted #919498;
+	}
+}
+.wp-block-bootstrap-blocks-container .container-wrap {
+  	position: relative;
+    display: block;
+  	width: 100%;
+}
+.wp-block[data-type="bastet/container"] {
+  max-width: none !important;
+}
+[data-type="bootstrap-blocks/container"] .block-editor-inner-blocks {
+  width: 100%;
+}

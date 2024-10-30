@@ -1,0 +1,246 @@
+{
+	"name": "bootstrap-blocks/container",
+	"category": "bootstrap-blocks",
+	"attributes": {
+	  	"fluid": {
+			"type": "boolean",
+			"default": false
+	  	},
+		"background": {
+			"type": "string",
+			"default": ""
+		},
+	    "className": {
+		  "type": "string",
+		  "default": ""
+	    },
+		"sectionID": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"color": {
+			"type": "string",
+			"default": ""
+	  	},
+	  	"uniqueID": {
+			"type": "string",
+			"default": ""
+	  	},
+	  	"bgImgID": {
+			"type": "number",
+			"default": ""
+	  	},
+		"bgImg": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"focalPoint": {
+			"type": "object",
+			"default": ""
+	  	},
+		"dimRatio": {
+		  "type": "number",
+		  "default": 50
+		},
+		"overlayColor": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"backgroundSize": {
+			"type": "string",
+			"default": "cover"
+	  	},
+		"backgroundRepeat": {
+		  "type": "string",
+		  "default": "repeat"
+		},
+		"customOverlayColor": {
+		  "type": "string",
+		  "default": ""
+		},
+		"gradient": {
+		  "type": "string",
+		  "default": ""
+		},
+		"customGradient": {
+		  "type": "string",
+		  "default": ""
+		},
+		"spacingUnit": {
+		  "type": "string",
+		  "default": "px"
+		},
+	  	"topMargin": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"bottomMargin": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"leftMargin": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"rightMargin": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"topPadding": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"bottomPadding": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"leftPadding": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"rightPadding": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"topMarginT": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"bottomMarginT": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"leftMarginT": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"rightMarginT": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"topPaddingT": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"bottomPaddingT": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"leftPaddingT": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"rightPaddingT": {
+		  "type": "string",
+		  "default": ""
+		},
+  		"topMarginM": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"bottomMarginM": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"leftMarginM": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"rightMarginM": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"topPaddingM": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"bottomPaddingM": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"leftPaddingM": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"rightPaddingM": {
+		  "type": "string",
+		  "default": ""
+		},
+	  	"borderControltype": {
+		  "type": "string",
+		  "default": "linked"
+		},
+	  	"borderControltypeM": {
+		  "type": "string",
+		  "default": "linked"
+		},
+	  	"borderControltypeT": {
+		  "type": "string",
+		  "default": "linked"
+		},
+		"borderStyle": {
+		  "type": "string",
+		  "default": "solid"
+		},
+		"borderStyleT": {
+		  "type": "string",
+		  "default": "solid"
+		},
+		"borderStyleM": {
+		  "type": "string",
+		  "default": "solid"
+		},
+	  	"topBorder": {
+		  "type": "number",
+		  "default": 0
+		},
+	  	"bottomBorder": {
+		  "type": "number",
+		  "default": 0
+		},
+	  	"rightBorder": {
+		  "type": "number",
+		  "default": 0
+		},
+	  	"leftBorder": {
+		  "type": "number",
+		  "default": 0
+		},
+	  	"topBorderM": {
+		  "type": "number",
+		  "default": 0
+		},
+	  	"bottomBorderM": {
+		  "type": "number",
+		  "default": 0
+		},
+	  	"rightBorderM": {
+		  "type": "number",
+		  "default": 0
+		},
+	  	"leftBorderM": {
+		  "type": "number",
+		  "default": 0
+		},
+	  	"topBorderT": {
+		  "type": "number",
+		  "default": 0
+		},
+	  	"bottomBorderT": {
+		  "type": "number",
+		  "default": 0
+		},
+	  	"rightBorderT": {
+		  "type": "number",
+		  "default": 0
+		},
+	  	"leftBorderT": {
+		  "type": "number",
+		  "default": 0
+		}
+	},
+	"supports": {
+		"align": false,
+		"html": false
+	}
+}

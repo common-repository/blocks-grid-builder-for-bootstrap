@@ -1,0 +1,101 @@
+[data-type="bootstrap-blocks/row"] .bootstrap-blocks-row .wp-block-bootstrap-blocks-row>.block-editor-inner-blocks>.block-editor-block-list__layout {
+	display: flex;
+  flex-wrap: wrap;
+  [data-type="bootstrap-blocks/column"] {
+	margin-left: unset !important;
+	margin-right: unset !important;
+	margin-top: unset;
+	margin-bottom: 10px;
+  }
+}
+[data-type="bootstrap-blocks/row"] .block-editor-inner-blocks {
+  width: 100%;
+}
+[data-type="bootstrap-blocks/row"] .bootstrap-blocks-row.list-view .wp-block-bootstrap-blocks-row>.block-editor-inner-blocks>.block-editor-block-list__layout {
+  display: block;
+  [data-type="bootstrap-blocks/column"] {
+	flex: 0 0 100% !important;
+	width: 100% !important;
+  }
+}
+.bootstrap-blocks-row {
+  border: .1rem dashed #cdcdcd;
+  padding: 8px 10px;
+  .row-toolbar {
+	display: flex;
+	padding: 0 5px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-size: 13px;
+	line-height: 13px;
+	margin-bottom: 6px;
+	font-weight: bold;
+	color: rgba(25,30,35,.3);
+	.toggler {
+	  &:hover {
+		cursor: pointer;
+	  }
+	  svg {
+		width: 18px;
+		height: 18px;
+		fill: rgba(25,30,35,.3);
+	  }
+	  &.is-active {
+		svg {
+		  fill: var(--wp-admin-theme-color)
+		}
+	  }
+
+	}
+  }
+  [data-type="bootstrap-blocks/column"] .col-wrapper {
+    margin: 5px;
+	border: 1px dashed #dedede;
+	.block-editor-inserter button {
+	  width: 26px;
+	  height: 26px;
+	  margin: auto;
+	}
+  }
+  .block-list-appender {
+	margin-left: auto;
+	margin-right: auto;
+	button {
+	  background-color: #fff;
+	}
+  }
+}
+[data-type="bootstrap-blocks/row"] {
+  &.is-selected {
+	.bootstrap-blocks-row {
+	  .row-toolbar {
+		color: #191e23;
+	  }
+	  .toggler:not(.is-active) {
+		svg {
+		  fill: #191e23;
+		}
+	  }
+	}
+  }
+}
+.bootstrap-grid-builder-blocks-template-selector-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  li {
+	padding: 5px;
+	list-style: none;
+	.components-button {
+	  padding: 5px;
+	  display: block;
+	  height: auto;
+	}
+  }
+  button.is-active {
+	border: 2px solid var(--wp-admin-theme-color);
+	border-radius: 2px;
+  }
+}
